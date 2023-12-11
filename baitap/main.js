@@ -133,7 +133,10 @@ function renderUI(data) {
   }
   getEle("tableDanhSach").innerHTML = content;
 }
-
+//bo nut cap nhat khi an btnThem
+getEle("btnThem").onclick = function btnThem() {
+  getEle("btnCapNhat").style.display = "none";
+};
 //button thêm nhân viên
 getEle("btnThemNV").onclick = function handleThemNV() {
   const nv = layThongTinNhanVien();
